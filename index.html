@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/dayjs"></script> <!--cdn読み込み-->
+  <script src="https://unpkg.com/dayjs@1.7.7/locale/ja.js"></script> <!--日本語に対応させるパッケージ読み込み-->
+  <title>dayjs</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script>
+    // dayjs.locale('ja'); //日本語に変換
+    // // ここから追記...
+    // // 年の表示
+    // const year = dayjs().year();
+    // console.log(year);
+
+    // // 月の表示
+    // const month = dayjs().month()+1;
+    // console.log(month);
+    
+    // // 日の表示
+    // const date = dayjs().date();
+    // console.log(date);
+
+    // // 曜日の表示
+    // const day=dayjs().day();
+    // const dayT=["日","月","火","水","木","金","土"];
+    // console.log(dayT[day]);
+
+    // // 時の表示
+    // const hours=dayjs().hour();
+    // console.log(hours);
+
+    // // 分の表示
+    // const minutes = dayjs().minute();
+    // console.log(minutes);
+
+    // // 秒の表示
+    // const seconds=dayjs().second();
+    // console.log(seconds);
+
+    // formatメソッド
+    // 年の表示
+    // const year = dayjs().format("2020年");
+    // console.log(year);
+
+    // 月の表示
+    // const hours = dayjs().format("2ヶ月");
+    // console.log(hours);
+
+    // 日の表示
+    // const date = dayjs().format("2日後");
+    // console.log(date);
+
+    // 曜日の表示
+    // const day= dayjs().format("木曜日");
+    // console.log(day);
+
+    // 時の表示
+    // const hour = dayjs().format("18時");
+    // console.log(hour);
+
+    // 分の表示
+    // const minute = dayjs().format("40分");
+    // console.log(minute);
+
+    // 秒の表示
+    // const second = dayjs().format("10秒");
+    // console.log(second);
+
+    // まとめて記述
+    // const today = dayjs().format("2022年2月26日14:48:10");
+    // console.log(today);
+
+    // 日付の加算・減算
+    // 1年後・1年前
+    console.log(dayjs().format("2022年"));
+
+    const addYear = dayjs().add(1,'year').format("2023年");
+    console.log(addYear);
+
+    const addSubtract = dayjs().subtract(1,'year').format("2022年");
+    console.log(addSubtract);
+  </script>
+</body>
+</html>
